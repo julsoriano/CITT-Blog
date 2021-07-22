@@ -23,6 +23,7 @@ import Router from "next/router";
 
 import PageChange from "components/PageChange/PageChange.js";
 
+// global css (seems styles/gobal.css is not used)
 import "assets/css/nextjs-material-dashboard.css?v=1.1.0";
 
 Router.events.on("routeChangeStart", (url) => {
@@ -90,6 +91,7 @@ export default class MyApp extends App {
 
     // Only Dashboard.js specifies a layout
     const Layout = Component.layout || (({ children }) => <>{children}</>);
+    console.log("Layout Name: " + Layout.name);
 
     return (
       <React.Fragment>

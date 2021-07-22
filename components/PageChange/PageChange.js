@@ -32,6 +32,7 @@ const styles = {
 };
 
 export default function PageChange(props) {
+  console.log("Page Change");
   const useStyles = makeStyles(styles);
   const classes = useStyles();
   return (
